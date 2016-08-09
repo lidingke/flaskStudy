@@ -1,5 +1,6 @@
 from flask_bootstrap import Bootstrap
 from flask import Flask, render_template
+import pdb
 app = Flask(__name__)
 
 
@@ -23,5 +24,6 @@ def internal_server_error(e):
 
 if __name__ == '__main__':
     bootstrap = Bootstrap(app)
+    pdb.set_trace()
     app.run(debug=True)
 
